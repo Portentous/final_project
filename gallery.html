@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+<meta charset="utf-8" />
+<title>Adventures in Far Cry 4</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+<script src="slider/js/jquery-1.9.1.min.js"></script>
+    <script src="slider/js/jquery.excoloSlider.min.js"></script>
+    <link href="slider/css/jquery.excoloSlider.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+        // Settings for Adaptive.js
+        var ADAPT_CONFIG = {
+            path: 'css/',
+            dynamic: true,
+            range: [
+                '0px    to 760px  = mobile.min.css',
+                '760px  to 980px  = 720.min.css',
+                '980px            = 960.min.css'
+            ]
+        };
+
+    </script>
+    <script>
+$(function () {
+    $("#slider").excoloSlider({
+        mouseNav: false,
+		autoPlay: false,
+        interval: 5000, // = 5 seconds
+        playReverse: false
+		
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div data-role="page" data-theme="a">
+
+  <div data-role="header" data-position=fixed>
+    <h1>Adventures in Far Cry 4</h1>
+  </div>
+
+    <div data-role=navbar>
+      <ul>
+      	<li><a href="index.html">Home</a></li>
+        <li><a href="about.html">What is this game?</a></li>
+        <li><a href="review.html">Game Review</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="characters.html">Main Characters</a></li>
+        <li><a href="animals.html">Types of Animals</a></li>
+        <li style="width:100%"><a href="weapons.html">Types of Weapons</a></li>
+      </ul>
+    </div>
+
+   <div data-role=content>
+    <div id="slider">
+    <img src="images/Screenshots/landscape1.jpg" data-plugin-slide-caption="The Beauty of Kyrat">
+    <img src="images/Screenshots/copter1.jpg" data-plugin-slide-caption="The gyrocopter is the best way to get around">
+    <img src="images/Screenshots/landscape2.jpg" data-plugin-slide-caption="Huge open world">
+    <img src="images/Screenshots/coop1.jpg" data-plugin-slide-caption="Team up with a friend to take down your enemies!">
+    <img src="images/Screenshots/driving1.jpg" data-plugin-slide-caption="Another fun way to travel Kyrat">
+    <img src="images/Screenshots/enemies.jpg" data-plugin-slide-caption="Tag and silently take out your enemies">
+    <img src="images/Screenshots/coop2.jpg" data-plugin-slide-caption="Teamwork is Key">
+    <img src="images/Screenshots/upgrade.jpg" data-plugin-slide-caption="Hunt animals to upgrade your carriers, holsters, etc.">
+    
+</div>
+  </div>
+	
+  <div data-role="footer" data-position=fixed>
+    <h4>Thomas Greenhalgh</h4>
+    <h6>All screenshots taken in-game. Thanks to Ubisoft for making such an amazing title!</h6>
+  </div>
+
+</div>
+
+</body>
+</html>
